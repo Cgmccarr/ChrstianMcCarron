@@ -33,7 +33,7 @@ h4{ font-size: 24px;}
 h5{ font-size: 20px;}
 h6{ font-size: 16px;}
 
-p, li, span, label, input, textarea{
+p, li, span, label, input, textarea, a{
     color: var(--secondaryText);
     font-family: 'Roboto Mono', monospace;
 }
@@ -255,7 +255,29 @@ ul{
     right: -5px;
 }
 
+.about-wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    padding-bottom: 50px;
+    padding-top: 50px;
+    gap: 100px;
+}
 
+#skills{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--preveiwShadow);
+}
+
+.social-link{
+    display: grid;
+    justify-content: center;
+    text-align: center;
+}
+
+#social_image{
+    width: 100%;
+}
 
 @media screen and (max-width: 1200px){
     .main-container{
